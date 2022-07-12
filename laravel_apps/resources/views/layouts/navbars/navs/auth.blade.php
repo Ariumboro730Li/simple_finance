@@ -17,14 +17,6 @@
         <span class="navbar-toggler-icon icon-bar"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end">
-        <a class="btn btn-danger mr-4" target="_blank" href="https://www.creative-tim.com/product/material-dashboard-pro-laravel">
-          <i class="material-icons">shopping_cart</i>
-            <span>Buy Now</span>
-        </a>
-        <a id="docs" class="btn btn-success mr-4" target="_blank" href="https://material-dashboard-pro-laravel.creative-tim.com/docs/getting-started/laravel-setup.html">
-          <i class="material-icons">book</i>
-            <span>Documentation</span>
-        </a>
         <form class="navbar-form">
           <div class="input-group no-border">
             <input type="text" value="" class="form-control" placeholder="Search...">

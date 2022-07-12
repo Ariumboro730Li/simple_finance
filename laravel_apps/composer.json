@@ -14,7 +14,8 @@
         "laravel/framework": "^9.0",
         "laravel/legacy-factories": "^1.1",
         "laravel/tinker": "^2.6.3",
-        "laravel/ui": "^3.4"
+        "laravel/ui": "^3.4",
+        "yajra/laravel-datatables-oracle": "~9.0"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.7.0",

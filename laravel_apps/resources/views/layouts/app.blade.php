@@ -282,6 +282,12 @@
         <script src="{{ asset('material') }}/js/application.js"></script>
         <script src="{{ asset('material') }}/demo/jquery.sharrre.js"></script>
         <script src="https://cdn.ckeditor.com/ckeditor5/19.1.1/classic/ckeditor.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/data.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js"></script>
         @if (config('app.is_demo'))
             <script src="{{ asset('material') }}/demo/tour.js"></script>
         @endif
