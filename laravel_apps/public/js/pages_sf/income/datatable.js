@@ -2,7 +2,7 @@ $(function() {
     $('#datatable').DataTable({
         processing: true,
         serverSide: true,
-        ajax: 'http://127.0.0.1:8000/income/data-table', // memanggil route yang menampilkan data json
+        ajax: `${configView.url}/income/data-table`, // memanggil route yang menampilkan data json
         columns: [{ // mengambil & menampilkan kolom sesuai tabel database
                 data: 'id',
             },
@@ -14,6 +14,9 @@ $(function() {
             },
             {
                 data: 'created_at',
+            },
+            {
+                data: 'updated_at',
             },
             {
                 data: 'action',

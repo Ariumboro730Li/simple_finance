@@ -29,9 +29,13 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::prefix('income')->group(function () {
         Route::get("/", [IncomeController::class, "index"])->name("page.income");
-        Route::get("data-table", [IncomeController::class, "dataTable"])->name("page.income.dataTable");
         Route::get("add", [IncomeController::class, "add"])->name("page.income.add");
         Route::post("add", [IncomeController::class, "create"])->name("page.income.add.post");
+        Route::post("edit", [IncomeController::class, "edit"])->name("page.income.edit.post");
+        Route::get("graph", [IncomeController::class, "graph"])->name("page.income.graph");
+        Route::get("data-table", [IncomeController::class, "dataTable"])->name("page.income.dataTable");
+        Route::get("data-table/edit", [IncomeController::class, "dataTableEdit"])->name("page.income.dataTable.edit");
+        Route::get("data-table/delete", [IncomeController::class, "dataTableDelete"])->name("page.income.dataTable.delete");
     });
 });
 

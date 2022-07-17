@@ -22,6 +22,7 @@
                                     <th>Category</th>
                                     <th>Total</th>
                                     <th>Timestamp</th>
+                                    <th>Timestamp Edit</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -34,6 +35,11 @@
 </div>
 @endsection
 @push("js")
+<script>
+    let configView = {
+        url : "{{url('')}}",
+    };
+</script>
 <script src="{{asset('js/pages_sf/income/graph.js')}}"></script>
 <script src="{{asset('js/pages_sf/income/datatable.js')}}"></script>
 @endpush
