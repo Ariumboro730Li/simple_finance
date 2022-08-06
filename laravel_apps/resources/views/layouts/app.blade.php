@@ -51,6 +51,7 @@
     <!-- End Google Tag Manager -->
     @endif
     <meta charset="utf-8" />
+    <meta name="_token" content="{{ csrf_token() }}"/>
     <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('material') }}/img/apple-icon.png">
     <link rel="icon" type="image/png" href="{{ asset('material') }}/img/favicon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -406,6 +407,13 @@
             });
 
           });
+        </script>
+        <script>
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+                }
+            });
         </script>
         @stack('js')
 

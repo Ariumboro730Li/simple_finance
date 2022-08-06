@@ -3,7 +3,6 @@ const getGraph = () => {
         url : `${configView.url}/income/graph`,
         type: "get",
         success : function(response){
-            console.log(response);
             Highcharts.chart('container', {
                 chart: {
                     type: 'column'
